@@ -1,0 +1,17 @@
+﻿@model Core_Bookcase.Models.Book
+@{
+    ViewData["Title"] = "NewBook";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<h1>NewBook</h1>
+<br />
+<form class="form-group" method="post">
+    <b>Book name</b>
+    @Html.TextBoxFor(x=>x.Name, new {@class="form-control"})
+    <br />
+    <b>Writer name</b>
+    @Html.TextBoxFor(x => x.Writer, new { @class = "form-control" })
+    <br />
+   <button class="btn btn-success">Add Book</button>
+</form>

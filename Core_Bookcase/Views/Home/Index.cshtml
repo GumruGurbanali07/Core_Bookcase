@@ -24,3 +24,8 @@
 @await Component.InvokeAsync("NewBooks")
 <br />
 @Html.Partial("_PartialPage")
+
+@{
+    var a = "<b>Hello</b>";
+}
+@Html.Raw(a);

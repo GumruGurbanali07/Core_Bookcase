@@ -24,6 +24,10 @@ namespace Core_Bookcase.Controllers
             return View(bk);
         }
 
+        public IActionResult StaticView()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

@@ -1,0 +1,24 @@
+﻿@model Core_Bookcase.Models.Book
+
+@{
+    ViewData["Title"] = "GetBook";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<h1>GetBook</h1>
+<br />
+@using (Html.BeginForm("UpdateBook", "Book", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.Id)
+     <b>Book name</b>
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <br />
+    <b>Writer name</b>
+    @Html.TextBoxFor(x => x.Writer, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Update Book</button>
+}
+
+   
+
+
