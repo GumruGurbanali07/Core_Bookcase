@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Core_Bookcase")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2256217fa1acb1686f6984915bf240f003948f8f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+364768f4668e35d71f80359cdb17d5feaaea24d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Core_Bookcase")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Core_Bookcase")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

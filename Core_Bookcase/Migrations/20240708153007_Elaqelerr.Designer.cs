@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Core_Bookcase.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240703125602_Initial")]
-    partial class Initial
+    [Migration("20240708153007_Elaqelerr")]
+    partial class Elaqelerr
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,13 +36,55 @@ namespace Core_Bookcase.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("ReadId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Writer")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ReadId");
+
                     b.ToTable("Books");
+                });
+
+            modelBuilder.Entity("Core_Bookcase.Models.Reader", b =>
+                {
+                    b.Property<int>("ReadId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ReadId"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ReadId");
+
+                    b.ToTable("Readers");
+                });
+
+            modelBuilder.Entity("Core_Bookcase.Models.Book", b =>
+                {
+                    b.HasOne("Core_Bookcase.Models.Reader", "Reader")
+                        .WithMany("Books")
+                        .HasForeignKey("ReadId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Reader");
+                });
+
+            modelBuilder.Entity("Core_Bookcase.Models.Reader", b =>
+                {
+                    b.Navigation("Books");
                 });
 #pragma warning restore 612, 618
         }

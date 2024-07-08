@@ -1,11 +1,14 @@
-﻿namespace Core_Bookcase.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Core_Bookcase.Models
 {
     public class Reader
     {
-        public int Id { get; set; }
+        [Key]
+        public int ReadId { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        public 
+        public List<Book> Books { get; set; }
       
 
     }

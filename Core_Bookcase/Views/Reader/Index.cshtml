@@ -1,0 +1,39 @@
+﻿@model List<Core_Bookcase.Models.Reader>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Delete</th>
+        <th>Update</th>
+        <th>Book</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ReadId</td>
+            <td>@item.Name</td>
+            <td>@item.Surname</td>
+            <td>
+                
+            @foreach(var book in item.Books)
+            {
+                @book.Name;
+            }
+                
+            </td>
+            <td><a href="/Book/DeleteBook/@item.ReadId" class="btn btn-danger">Delete</a></td>
+            <td><a href="/Book/GetBook/@item.ReadId" class="btn btn-warning">Update</a></td>
+            
+        </tr>
+    }
+
+</table>
+<a href="/Reader/NewReader" class="btn btn-success">New Reader</a>
+

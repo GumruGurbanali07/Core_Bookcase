@@ -1,0 +1,22 @@
+﻿@model Core_Bookcase.Models.Reader
+@{
+    ViewData["Title"] = "NewReader";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<h1>NewReader</h1>
+<br />
+<form class="form-group" method="post">
+    <b>Reader name</b>
+    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+    <br />
+    <b>Reader surname</b>
+    @Html.TextBoxFor(x => x.Surname, new { @class = "form-control" })
+    <br />
+    <b>Book name</b>
+    @Html.ListBox("selectedBookIds", (IEnumerable<SelectListItem>)ViewBag.BookItems, new { @class = "form-control", multiple="multiple" })
+    <br />
+    <button class="btn btn-success">Add Reader</button>
+</form>
+
+
