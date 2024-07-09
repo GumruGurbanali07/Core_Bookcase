@@ -5,6 +5,26 @@
       "PackagePath": "staticwebassets\\Core_Bookcase.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\Web\\forget.html",
+      "PackagePath": "staticwebassets\\Web\\forget.html"
+    },
+    {
+      "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\Web\\image\\bg1.jpg",
+      "PackagePath": "staticwebassets\\Web\\image\\bg1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\Web\\login.html",
+      "PackagePath": "staticwebassets\\Web\\login.html"
+    },
+    {
+      "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\Web\\register.html",
+      "PackagePath": "staticwebassets\\Web\\register.html"
+    },
+    {
+      "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\Web\\style.css",
+      "PackagePath": "staticwebassets\\Web\\style.css"
+    },
+    {
       "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -787,50 +807,6 @@
     {
       "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\twitter-bootstrap\\scss\\vendor\\_rfs.scss",
       "PackagePath": "staticwebassets\\twitter-bootstrap\\scss\\vendor\\_rfs.scss"
-    },
-    {
-      "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\web\\css\\font-awesome.css",
-      "PackagePath": "staticwebassets\\web\\css\\font-awesome.css"
-    },
-    {
-      "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\web\\css\\style.css",
-      "PackagePath": "staticwebassets\\web\\css\\style.css"
-    },
-    {
-      "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\web\\fonts\\FontAwesome.otf",
-      "PackagePath": "staticwebassets\\web\\fonts\\FontAwesome.otf"
-    },
-    {
-      "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\web\\fonts\\fontawesome-webfont.eot",
-      "PackagePath": "staticwebassets\\web\\fonts\\fontawesome-webfont.eot"
-    },
-    {
-      "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\web\\fonts\\fontawesome-webfont.svg",
-      "PackagePath": "staticwebassets\\web\\fonts\\fontawesome-webfont.svg"
-    },
-    {
-      "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\web\\fonts\\fontawesome-webfont.ttf",
-      "PackagePath": "staticwebassets\\web\\fonts\\fontawesome-webfont.ttf"
-    },
-    {
-      "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\web\\fonts\\fontawesome-webfont.woff",
-      "PackagePath": "staticwebassets\\web\\fonts\\fontawesome-webfont.woff"
-    },
-    {
-      "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\web\\fonts\\fontawesome-webfont.woff2",
-      "PackagePath": "staticwebassets\\web\\fonts\\fontawesome-webfont.woff2"
-    },
-    {
-      "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\web\\images\\3.jpg",
-      "PackagePath": "staticwebassets\\web\\images\\3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\web\\index.html",
-      "PackagePath": "staticwebassets\\web\\index.html"
-    },
-    {
-      "Id": "C:\\Users\\Sheki-S\\source\\repos\\Core_Bookcase\\Core_Bookcase\\wwwroot\\web\\w3layouts-License.txt",
-      "PackagePath": "staticwebassets\\web\\w3layouts-License.txt"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Core_Bookcase.Microsoft.AspNetCore.StaticWebAssets.props",

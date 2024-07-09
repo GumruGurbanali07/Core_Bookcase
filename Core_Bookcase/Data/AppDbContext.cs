@@ -12,7 +12,7 @@ namespace Core_Bookcase.Data
 
 		public DbSet<Book> Books {  get; set; }
 		public DbSet<Reader> Readers { get; set; }
-
+		public DbSet<Admin> Admins { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 			modelBuilder.Entity<Reader>()

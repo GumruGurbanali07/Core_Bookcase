@@ -1,5 +1,6 @@
 ﻿using Core_Bookcase.Data;
 using Core_Bookcase.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Core_Bookcase.Controllers
@@ -11,6 +12,7 @@ namespace Core_Bookcase.Controllers
         {
             _context = context;
         }
+		[Authorize]
         public IActionResult Index()
 		{
 			var items=_context.Books.ToList();
